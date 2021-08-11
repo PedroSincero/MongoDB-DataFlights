@@ -1,3 +1,4 @@
+use ('dataFlights');
 db.voos.deleteMany({
   $and: [
     {
@@ -8,3 +9,14 @@ db.voos.deleteMany({
     }
   ]
   });
+
+
+
+
+
+
+
+
+
+
+
