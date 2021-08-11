@@ -11,15 +11,15 @@ db.resumoVoos.insertOne({
   }),
 });
 
-db.resumoVoos.findOne({
+db.resumoVoos.findOne(
   {
-    empresa: "PASSAREDO"
+    empresa: "PASSAREDO",
   },
   {
     _id: false,
     empresa: true,
-    totalVoosDomesticos: true
-  }
-});
+    totalVoosDomesticos: true,
+  },
+);
 
 // Agradecimentos a Lucas Martins Turma 10 - Tribo B, Por ter me auxiliado na criação do codigo 
