@@ -2,10 +2,10 @@ db.resumoVoos.insertOne({
   empresa: "PASSAREDO",
   totalVoosDomesticos: db.voos.count({
     $and: [{
-        natureza: "Doméstica"
+        natureza: "Doméstica",
       },
       {
-        "empresa.nome": "PASSAREDO"
+        "empresa.nome": "PASSAREDO",
       },
     ],
   }),
