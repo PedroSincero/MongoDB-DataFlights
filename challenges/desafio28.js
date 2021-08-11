@@ -1,5 +1,5 @@
 const empresa = "LATAM AIRLINES BRASIL";
-db.resumoVoos.insertOne({
+db.resumoVoos.insert({
   empresa,
   totalVoosDomesticos: db.voos.count({
     $and: [{
