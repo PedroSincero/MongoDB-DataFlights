@@ -1,14 +1,14 @@
 use ('dataFlights');
-db.voos.deleteMany({
-  $and: [
-    {
-      "empresa.nome": "GOL"
-    },
-    {
-      "passageiros.pagos": { $lte: 10, $gte: 5 }
-    }
-  ]
-  });
+db.resumoVoos.insertOne({
+  empresa: "PASSAREDO",
+  totalVoosDomesticos: db.voos.count({
+    $and: [
+      { natureza: "Doméstica" },
+      { "empresa.nome": "PASSAREDO"},
+    ],
+  }),
+});
+
 
 
 
